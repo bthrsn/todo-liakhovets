@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/todo-liakhovets/static/css/main.8f78bdff.chunk.css",
+    "main.js": "/todo-liakhovets/static/js/main.650ef47b.chunk.js",
+    "main.js.map": "/todo-liakhovets/static/js/main.650ef47b.chunk.js.map",
+    "runtime-main.js": "/todo-liakhovets/static/js/runtime-main.eb18a38c.js",
+    "runtime-main.js.map": "/todo-liakhovets/static/js/runtime-main.eb18a38c.js.map",
+    "static/js/2.1a919074.chunk.js": "/todo-liakhovets/static/js/2.1a919074.chunk.js",
+    "static/js/2.1a919074.chunk.js.map": "/todo-liakhovets/static/js/2.1a919074.chunk.js.map",
+    "static/js/3.e2e095e4.chunk.js": "/todo-liakhovets/static/js/3.e2e095e4.chunk.js",
+    "static/js/3.e2e095e4.chunk.js.map": "/todo-liakhovets/static/js/3.e2e095e4.chunk.js.map",
+    "index.html": "/todo-liakhovets/index.html",
+    "static/css/main.8f78bdff.chunk.css.map": "/todo-liakhovets/static/css/main.8f78bdff.chunk.css.map",
+    "static/js/2.1a919074.chunk.js.LICENSE.txt": "/todo-liakhovets/static/js/2.1a919074.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb18a38c.js",
+    "static/js/2.1a919074.chunk.js",
+    "static/css/main.8f78bdff.chunk.css",
+    "static/js/main.650ef47b.chunk.js"
+  ]
+}
