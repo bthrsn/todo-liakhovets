@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import { useSelector, useDispatch } from 'react-redux';
 import './App.css';
+import { InputBlock } from "./components/InputBlock";
+import { TaskState } from "./redux/reducers/taskReducer";
+import { addTask } from "./redux/actions/AddAction";
+
 
 function App() {
+
+  const tasks = useSelector<TaskState, TaskState["tasks"]>(
+    (state) => state.tasks
+  );
+  
+  const dispatch = useDispatch();
+  
+  const onAddTask = (task: string) => {
+    dispatch(addTask(task));
+  }
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Todo App</h1>
+      <InputBlock addTask={ onAddTask }/>
+      <div>
+        <ul>
+          {tasks.map((task, i) => 
+            <li>
+              <span key={i}>{task}</span>
+            </li>
+          )}
+        </ul>
+      </div>
+    </>
   );
 }
 
